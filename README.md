@@ -2,11 +2,11 @@
 
 Notx is a simple and intuitive note-taking application built with Flutter. An easy way to manage ideas or any information you need to remember.
 
-_Include a video here to showcase its UI._
-
 <p align="center">
    <img src="./assets/icon/icon.png" width="128" height="128">
 </p>
+
+https://github.com/user-attachments/assets/47fe1a99-80e3-49ef-a700-e9672a6b31c4
 
 ## Features
 
