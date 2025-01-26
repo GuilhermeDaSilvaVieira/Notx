@@ -1,11 +1,15 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:notx/common/notes/bloc/note_bloc.dart';
 import 'package:notx/common/notes/data/repository.dart';
+import 'package:notx/common/notes/data/sqflite_connection.dart';
 import 'package:notx/common/theme/app_theme.dart';
 import 'package:notx/common/theme/bloc/theme_bloc.dart';
 import 'package:notx/features/list/screens/list_screen.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:sqflite_common_ffi/sqflite_ffi.dart';
 
 // Note taking app
 // Dark and light mode

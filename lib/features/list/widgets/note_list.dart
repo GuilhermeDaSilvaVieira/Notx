@@ -39,6 +39,7 @@ class _NoteListState extends State<NoteList> {
                   padding: const EdgeInsets.all(12),
                 );
         } else {
+          print(state);
           return Container();
         }
       },
