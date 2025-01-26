@@ -46,6 +46,7 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_launcher_icons: ^0.14.3
+  package_rename: ^1.8.0
 
 flutter_launcher_icons:
   android: true
@@ -58,6 +59,32 @@ flutter_launcher_icons:
     generate: true
   macos:
     generate: true
+
+package_rename_config:
+  android:
+    app_name: Notx
+    package_name: org.guilhermedasilvavieira.notx
+
+  ios:
+    app_name: Notx
+    bundle_name: notx
+    package_name: org.guilhermedasilvavieira.notx
+
+  linux:
+    app_name: Notx
+    package_name: org.guilhermedasilvavieira.notx
+    exe_name: Notx-linux-x64
+
+  windows:
+    app_name: Notx
+    organization: Guilherme Da Silva Vieira
+    copyright_notice: Copyright ©️ 2025-present Guilherme Da Silva Vieira. All rights reserved.
+    exe_name: Notx-win32
+
+  macos:
+    app_name: Notx
+    package_name: org.guilhermedasilvavieira.notx
+    copyright_notice: Copyright ©️ 2025-present Guilherme Da Silva Vieira. All rights reserved.
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
