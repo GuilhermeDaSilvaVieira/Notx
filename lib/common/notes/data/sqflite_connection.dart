@@ -6,7 +6,7 @@ import 'package:path_provider/path_provider.dart';
 import 'package:sqflite_common_ffi/sqflite_ffi.dart';
 
 class SqfliteConnection {
-  final databaseName = 'notx.db';
+  final databaseName = 'Notx.db';
 
   Future<Database> initDatabase() async {
     if (Platform.isAndroid || Platform.isIOS || Platform.isMacOS) {
@@ -18,11 +18,16 @@ class SqfliteConnection {
     } else if (Platform.isLinux || Platform.isWindows) {
       sqfliteFfiInit();
       final databaseFactory = databaseFactoryFfi;
-      final databasePath = await getApplicationDocumentsDirectory();
-      // final databasePath =
-      //     Directory('${Platform.environment['HOME']}/Documents/');
-      print(databasePath);
-      final path = join(databasePath.path, 'databases', databaseName);
+
+      var databasePath;
+      try {
+        databasePath = await getApplicationDocumentsDirectory();
+      } catch (e) {
+        // Linux without xdg-user-dirs support, e.g. NixOS with WM
+        databasePath = Directory(Platform.environment['HOME'].toString());
+      }
+
+      final path = join(databasePath.path, 'Notx', 'data', databaseName);
       return databaseFactory.openDatabase(
         path,
         options: OpenDatabaseOptions(
