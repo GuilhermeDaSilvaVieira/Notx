@@ -38,8 +38,14 @@ class _NoteListState extends State<NoteList> {
                       NoteWidget(note: state.allNotes[index]),
                   padding: const EdgeInsets.all(12),
                 );
+        } else if (state is NoteFailure) {
+          return Center(
+            child: Text(
+              state.errorMessage,
+              style: Theme.of(context).textTheme.bodyMedium,
+            ),
+          );
         } else {
-          print(state);
           return Container();
         }
       },
