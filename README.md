@@ -59,8 +59,11 @@ To get started with the app, follow the steps below:
 - **path**: Join directory paths
 - **path_provider**: Get platform specific paths such as documents
 - **sqflite**: Local database used to persist notes.
+- **sqflite_common_ffi**: Linux and Windows support for sqflite
+- **sqflite3_flutter_libs**: iOS, Android, and MacOS support for sqflite_common_ffi
 - **shared_preferences**: Simple data persistance used for theming
-- **flutter_launcher_icons**: Cross platform app icon
+- **flutter_launcher_icons**: Generate launcher icons
+- **package_rename**: Rename app name and organization
 
 ## Supported Platforms
 
