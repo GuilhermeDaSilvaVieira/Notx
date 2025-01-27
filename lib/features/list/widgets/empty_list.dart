@@ -30,7 +30,7 @@ class EmptyList extends StatelessWidget {
           ),
         ),
         Padding(
-          padding: const EdgeInsets.only(top: 8),
+          padding: const EdgeInsets.only(top: 16),
           child: ElevatedButton(
             onPressed: () {
               Navigator.push(
