@@ -17,6 +17,10 @@ https://github.com/user-attachments/assets/47fe1a99-80e3-49ef-a700-e9672a6b31c4
 - **Theming**: Choose between light and dark mode as you see fit.
 - **Persistent Storage**: Notes are stored locally using SQLite, as well as themes, which are saved locally using Shared Preferences.
 
+## Feature-Based Architecture
+
+Notx is built using **Feature-Based Architecture**, which enhances scalability and modularity. This approach organizes the app into distinct feature modules, making the codebase easier to maintain and extend. Each feature is separated by its domain, such as note management, theming, and storage, which helps ensure clean code separation and simplifies testing.
+
 ## Prerequisites
 
 - Install [Flutter SDK](https://flutter.dev/docs/get-started/install) on your machine.
